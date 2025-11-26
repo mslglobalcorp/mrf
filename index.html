@@ -133,7 +133,7 @@
         <!-- SECTION 1: THE PHYSICS CHALLENGE -->
         <section id="challenge" class="scroll-mt-24">
             <div class="text-center max-w-3xl mx-auto mb-12">
-                <h2 class="text-3xl font-bold text-slate-900 mb-4">Challenges faced by Traditional Duct</h2>
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Why Traditional Ducts Fail</h2>
                 <p class="text-slate-600">
                     Vertical infrastructure introduces complex physical variables that compromise standard ventilation efficacy. It's not just about fan size; it's about physics.
                 </p>
@@ -178,7 +178,7 @@
                 
                 <!-- Left: The Mechanism -->
                 <div>
-                    <h2 class="text-3xl font-bold text-slate-900 mb-6">Multi-stage Filtration and Sterilization</h2>
+                    <h2 class="text-3xl font-bold text-slate-900 mb-6">The Dual-Action Defense</h2>
                     <p class="text-slate-600 mb-8">
                         We replace passive transport with <strong>Active In-Situ Treatment</strong>. Our "Kill & Capture" matrix utilizes a synergistic protocol to neutralize threats at the source.
                     </p>
@@ -225,13 +225,13 @@
                 </div>
 
                 <!-- Right: The Science (Plotly) -->
-                <div class="bg-white rounded-2xl p-6 shadow-2xl">
+                <div class="bg-slate-900 rounded-2xl p-6 shadow-2xl">
                     <div class="mb-4">
-                        <h3 class="text-xl font-bold text-slate-900">Germicidal Efficiency Spectrum</h3>
-                        <p class="text-sm text-slate-500">Scientific basis for 253.7nm selection.</p>
+                        <h3 class="text-xl font-bold text-white">Germicidal Efficiency Spectrum</h3>
+                        <p class="text-sm text-slate-400">Scientific basis for 253.7nm selection.</p>
                     </div>
                     <div id="uvSpectrumChart" class="plotly-container"></div>
-                    <div class="mt-4 text-xs text-slate-500 border-t border-slate-200 pt-3">
+                    <div class="mt-4 text-xs text-slate-500 border-t border-slate-700 pt-3">
                         * The plot demonstrates that MSL lamps (253.7nm) operate at near-peak germicidal efficiency (approx 85-90% relative to 265nm peak) for DNA inactivation.
                     </div>
                 </div>
@@ -268,7 +268,7 @@
                     <div class="chart-container">
                         <canvas id="spaceChart"></canvas>
                     </div>
-                    <div class="mt-4 p-3 bg-green-50 rounded text-xs text-green-800">
+                    <div class="mt-4 p-3 bg-pink-50 rounded text-xs text-pink-800">
                         <strong>Insight:</strong> Eliminating a 4 sq.ft vertical riser across 30 floors recovers ~120 sq.ft of total sellable area.
                     </div>
                 </div>
@@ -283,7 +283,7 @@
                 <!-- Verus Vent Specs Table -->
                 <div class="lg:col-span-2 card">
                     <div class="p-6 border-b border-slate-100 bg-slate-50">
-                        <h3 class="text-xl font-bold text-slate-800">Specifications</h3>
+                        <h3 class="text-xl font-bold text-slate-800">Verus Vent Specifications</h3>
                         <p class="text-sm text-slate-500">Technical Breakdown</p>
                     </div>
                     <div class="overflow-x-auto">
@@ -291,14 +291,14 @@
                             <thead class="text-xs text-slate-500 uppercase bg-slate-50 border-b">
                                 <tr>
                                     <th class="px-6 py-4 font-bold">Feature</th>
-                                    <th class="px-6 py-4 font-bold text-purple-600">MSL Global</th>
+                                    <th class="px-6 py-4 font-bold text-purple-600">Verus Vent (MSL)</th>
                                     <th class="px-6 py-4">Standard Exhaust</th>
                                 </tr>
                             </thead>
                             <tbody class="divide-y divide-slate-100">
                                 <tr class="hover:bg-slate-50/50">
                                     <td class="px-6 py-4 font-medium text-slate-900">Filtration</td>
-                                    <td class="px-6 py-4 text-slate-700">MERV 6</td>
+                                    <td class="px-6 py-4 text-slate-700">MERV 6 (Electro-Stainless)</td>
                                     <td class="px-6 py-4 text-slate-400">None</td>
                                 </tr>
                                 <tr class="hover:bg-slate-50/50">
@@ -308,7 +308,7 @@
                                 </tr>
                                 <tr class="hover:bg-slate-50/50">
                                     <td class="px-6 py-4 font-medium text-slate-900">Airflow</td>
-                                    <td class="px-6 py-4 text-slate-700">Variable</td>
+                                    <td class="px-6 py-4 text-slate-700">130-150 CMH (Recirculating)</td>
                                     <td class="px-6 py-4 text-slate-400">Variable</td>
                                 </tr>
                                 <tr class="hover:bg-slate-50/50">
@@ -417,7 +417,7 @@
                     y: 1.1, 
                     xanchor: 'center', 
                     orientation: 'h',
-                    font: { color: '#64748b' }
+                    font: { color: '#e2e8f0' }
                 }
             };
 
@@ -514,7 +514,7 @@
 
             // --- 3. Chart.js Stacked Bar: Space Recovery ---
             const ctxSpace = document.getElementById('spaceChart').getContext('2d');
-            const spaceLabels = ['Traditional Riser', 'MSL Global']; // Changed 'MSL Ductless' to 'MSL Global'
+            const spaceLabels = ['Traditional Riser', 'MSL Ductless'];
 
             new Chart(ctxSpace, {
                 type: 'bar',
@@ -530,7 +530,7 @@
                         {
                             label: 'Recovered Leasable Area',
                             data: [0, 4], // 4 sq ft recovered
-                            backgroundColor: '#22c55e', // Changed to Green for MSL brand
+                            backgroundColor: '#ec4899',
                             borderRadius: 4
                         }
                     ]
